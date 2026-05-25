@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidzee Play School</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; text-align: center; color: #333; }
+        header { background-color: #FFDE4D; padding: 40px; }
+        h1 { color: #FF4C4C; margin: 0; }
+        .hero { background: #F4E869; padding: 50px 20px; }
+        .btn { background: #FF4C4C; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 15px; }
+        .btn:hover { background: #e03b3b; }
+        .features { display: flex; justify-content: space-around; padding: 40px; background: #FFF7F1; flex-wrap: wrap; }
+        .feature-box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 250px; margin: 10px; }
+        
+        /* Form ka Naya CSS */
+        .form-container { max-width: 400px; margin: 20px auto; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: left; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-weight: bold; margin-bottom: 5px; color: #555; }
+        .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        .submit-btn { background: #FF4C4C; color: white; border: none; padding: 12px; width: 100%; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 16px; }
+        .submit-btn:hover { background: #e03b3b; }
+        
+        /* Staff Section Ka CSS */
+        .staff-section { padding: 50px 20px; background: #FFF7F1; }
+        .staff-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; }
+        .staff-card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); width: 220px; text-align: center; }
+        .staff-img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; background: #FFF7F1; margin-bottom: 15px; border: 3px solid #FFDE4D; }
+        .staff-card h4 { margin: 5px 0; color: #333; }
+        .staff-card p { margin: 5px 0; color: #FF4C4C; font-weight: bold; font-size: 14px; }
+        
+        footer { background: #333; color: white; padding: 20px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🧸 Kidzee Play School 🎨</h1>
+        <p>Khel-Khel Mein Shiksha aur Sanskar</p>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Our Play School</h2>
+        <p>Hum banate hain aapke bache ka bhavishya behtar aur surakshit.</p>
+        <!-- Ye button smoothly niche form par scroll karega -->
+        <a href="#contact" class="btn">Admission Open - Enquire Now</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-box"><h3>🎨 Art & Craft</h3><p>Bachon ki creativity badhane ke liye fun activities.</p></div>
+        <div class="feature-box"><h3>🤸 Safe Play Area</h3><p>CCTV secured aur safe khelne ki jagah.</p></div>
+        <div class="feature-box"><h3>📚 Smart Classes</h3><p>Visuals aur interactive tarike se padhai.</p></div>
+    </section>
+
+    <!-- Meet Our Staff Section -->
+    <section class="staff-section">
+        <h2>Meet Our Loving Staff</h2>
+        <p>Hamare anubhavi aur mamta mayi teachers jo bachon ko pyar se sikhate hain.</p>
+        
+        <div class="staff-container">
+            <!-- Staff 1 -->
+            <div class="staff-card">
+                <div class="staff-img" style="display: inline-block; line-height: 120px; font-size: 50px;">👩‍🏫</div>
+                <h4>Mrs. Anjali Sharma</h4>
+                <p>Principal / Founder</p>
+                <small>10+ Years Experience</small>
+            </div>
+
+            <!-- Staff 2 -->
+            <div class="staff-card">
+                <div class="staff-img" style="display: inline-block; line-height: 120px; font-size: 50px;">👩</div>
+                <h4>Miss Priya Singh</h4>
+                <p>Nursery Teacher</p>
+                <small>Expert in Art & Craft</small>
+            </div>
+
+            <!-- Staff 3 -->
+            <div class="staff-card">
+                <div class="staff-img" style="display: inline-block; line-height: 120px; font-size: 50px;">👵</div>
+                <h4>Mrs. Sudha Devi</h4>
+                <p>Caregiver / Helper</p>
+                <small>Kind & Loving Care</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form and Contact Section -->
+    <section id="contact" style="padding: 50px 20px; background-color: #f9f9f9;">
+        <h2>Admission Enquiry Form</h2>
+        <p>Kripya details bharein, hum aapse jald hi sampark karenge.</p>
+        
+        <div class="form-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label>Bacche Ka Naam (Student Name)</label>
+                    <input type="text" placeholder="Enter student name" required>
+                </div>
+                <div class="form-group">
+                    <label>Umar (Age)</label>
+                    <select required>
+                        <option value="">Select Age</option>
+                        <option value="2-3">2 - 3 Years</option>
+                        <option value="3-4">3 - 4 Years</option>
+                        <option value="4+">4+ Years</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Mata/Pita Ka Naam (Parent's Name)</label>
+                    <input type="text" placeholder="Enter parent name" required>
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" placeholder="Enter 10 digit number" pattern="[0-9]{10}" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Enquiry</button>
+            </form>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <h3>📍 Our Location & Timings</h3>
+            <p>Near FCI Manna Purva Lucknow Road Hardoi</p>
+            <p>📞 Phone: +91 8130940166</p>
+            
+            <!-- School Timings Table -->
+            <div style="max-width: 300px; margin: 15px auto; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h4 style="margin-top: 0; color: #FF4C4C;">⏰ School Timings</h4>
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 8px 0; font-weight: bold;">Somwar - Shukrawar:</td>
+                        <td style="padding: 8px 0; text-align: right;">09:00 AM - 01:00 PM</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 8px 0; font-weight: bold;">Shanivar:</td>
+                        <td style="padding: 8px 0; text-align: right;">08:00 AM - 12:00 PM</td>
+                    </tr>
+                    <tr style="color: red;">
+                        <td style="padding: 8px 0; font-weight: bold;">Ravivar:</td>
+                        <td style="padding: 8px 0; text-align: right;">School Closed</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>index.html.html
+
+    <footer>
+        <p>&copy; 2026 Kidzee Play School. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
