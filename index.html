@@ -25,6 +25,29 @@
             margin-bottom: 30px;
         }
 
+        /* --- NYA HEADER (TITLE) STYLES --- */
+        .school-header {
+            text-align: center;
+            padding: 50px 20px 30px 20px;
+            background: linear-gradient(135deg, #ffb347, #ff6f61);
+            color: white;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            margin-bottom: 40px;
+        }
+        .school-header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .school-header p {
+            margin: 10px 0 0 0;
+            font-size: 1.3rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
         /* Staff Section Styles */
         .staff-container {
             display: grid;
@@ -113,7 +136,7 @@
             background-color: #e55b4e;
         }
 
-        /* --- NYA FOOTER SECTION (CONTACT INFO) --- */
+        /* Footer Section */
         footer {
             background-color: #ff6f61;
             color: white;
@@ -153,8 +176,16 @@
 </head>
 <body>
 
+    <!-- 1. NYA MAIN TITLE / HEADER SECTION -->
+    <header class="school-header">
+        <!-- NOTE: Yahan 'ABC PLAY SCHOOL' ki jagah apne school ka naam daal lijiye -->
+        <h1>Kidzee Play School Hardoi 🌟</h1>
+        <p>A Place Where Learning is Fun & Creative!</p>
+    </header>
+
     <div class="container">
         
+        <!-- 2. MEET OUR STAFF SECTION -->
         <h2>Meet Our Wonderful Staff 👩‍🏫</h2>
         <div class="staff-container">
             <div class="staff-card">
@@ -176,6 +207,7 @@
 
         <hr style="border: 1px dashed #ddd; margin: 50px 0;">
 
+        <!-- 3. ADMISSION ENQUIRY FORM SECTION -->
         <div class="form-box">
             <h2>Admission Enquiry Form 📝</h2>
             
@@ -211,11 +243,12 @@
 
     </div>
 
+    <!-- 4. CONTACT INFO & FOOTER SECTION -->
     <footer>
         <div class="footer-content">
             <h3>Contact Us 📞</h3>
             <div class="contact-details">
-                <p>📍 **Address:** Near FCI Manna Purva Lucknow road Hardoi, 241001</p>
+                <p>📍 **Address:** Near FCI Manna Purva Lucknow Road Hardoi, 241001</p>
                 <p>📞 **Phone:** +91 8130940166</p>
                 <p>✉️ **Email:** jyoti.rajwanshi27@gmail.com</p>
             </div>
@@ -223,6 +256,7 @@
         </div>
     </footer>
 
+    <!-- 5. THANK YOU ALERT & GOOGLE SHEET PROCESSOR -->
     <script>
         const form = document.getElementById('enquiryForm');
         form.addEventListener('submit', async (e) => {
